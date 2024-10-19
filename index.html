@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toggle Buttons Task</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div class="overall-wrapper">
+      <div class="buttons-wrapper">
+        <div class="account-button-wrapper">
+          <button class="active-button">Account</button>
+        </div>
+        <div class="password-button-wrapper">
+          <button class="inactive-button">Password</button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="active-wrapper">
+          <div class="card-textarea">
+            <h1>Account</h1>
+            <p>
+              Make changes to your account here. Click save when<br />you're
+              done.
+            </p>
+          </div>
+          <div class="card-formarea">
+            <form action="#">
+              <div class="form-group">
+                <div class="form-label">
+                  <label for="name">Name</label>
+                </div>
+                <div class="form-input">
+                  <input type="text" id="name" value="Pedro Duarte" required />
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="form-label">
+                  <label for="username">Username</label>
+                </div>
+                <div class="form-input">
+                  <input type="text" id="username" value="@peduarte" required />
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="form-button">
+                  <button type="submit">Save changes</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="inactive-wrapper">
+          <div class="card-textarea">
+            <h1>Password</h1>
+            <p>
+              Change your password here. After saving, you'll be<br />logged
+              out.
+            </p>
+          </div>
+          <div class="card-formarea">
+            <form action="#">
+              <div class="form-group">
+                <div class="form-label">
+                  <label for="current-password">Current password</label>
+                </div>
+                <div class="form-input">
+                  <input type="password" id="current-password" required />
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="form-label">
+                  <label for="new-password">New password</label>
+                </div>
+                <div class="form-input">
+                  <input type="password" id="new-password" required />
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="form-button">
+                  <button type="submit">Save password</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>
